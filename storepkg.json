@@ -1,0 +1,21 @@
+{
+    "pkgver": 1,
+    "type": "plugin",
+    "name": "BattWarn",
+    "author": "Zack",
+    "description": "Battery Warning plugin is a PSP plugin that shows a message\non screen when your battery reaches\n15% or less charge.",
+    "link": "gamebrew.org/wiki/Battery_Warning_PRX_PSP",
+    "image": "githubusercontent:StoreStation/battwarnPkg/refs/heads/main/preview.jpg",
+    "version": "0.3",
+    "download": {
+        "remote": "github:StoreStation/battwarnPkg/releases/latest/download/battWarn.zip",
+        "compressed": true,
+        "targets": [
+            { "file": "battWarn.prx", "target": "ms0:/SEPLUGINS/battWarn.prx" }
+        ],
+        "register": [
+            "vsh, ms0:/SEPLUGINS/battWarn.prx, on",
+            "game, ms0:/SEPLUGINS/battWarn.prx, on"
+        ]
+    }
+}
